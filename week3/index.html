@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script>
+	function showNickname(){
+  document.getElementById("info").innerHTML = "Alj";
+}
+	function showCourse(){
+  document.getElementById("info").innerHTML = "Associate in Computer Technology - Specializing in Full Stack Development";
+}
+	function showScholarhip(){
+  document.getElementById("info").innerHTML = "No";
+}
+	function showHobbies(){
+  document.getElementById("info").innerHTML = "Video Games, Football, Hiking, Climbing, Golf, Reading, Scuba Diving, Traveling, Anime, Playing the guitar, Going to the gym, My dog, Programming";
+}
+	function showQuestion1(){
+  document.getElementById("info").innerHTML = "What do you want to learn to help you in your chosen Major?"<br>"I want to learn the processes to be able to design a working software application all on my own, from conceptualization, to launching said application and continuing routine debugging and maintenance.";
+}
+	function showQuestion2(){
+  document.getElementById("info").innerHTML = "What do you wish to accomplish in life?"<br>"I want to be able to reach financial freedom and create something which I can call my own whether that be a business venture, or a company of my own.";
+}
+</script>
+	
 <style>
 body {
 	background-image: url("./images/bg_1.png");
@@ -32,6 +54,14 @@ p {
 <img src="./images/profile_picture.png" alt="profile pic" width="200" margin-left="auto" margin-right="auto">
 <h2>by Aljohn Robles</h2>
 
+<button type="button" onclick="showNickname()">Nickname</button>
+<button type="button" onclick="showCourse()">Course</button>
+<button type="button" onclick="showScholarship()">Course</button>
+<button type="button" onclick="showHobbies()">Course</button>
+<button type="button" onclick="showQuestion1()">Course</button>
+<button type="button" onclick="showQuestion2()">Course</button>
+<p id="info">Info will be displayed here</p>
+	
 <p>
 Nickname: Alj
 <br>
@@ -49,6 +79,7 @@ What do you wish to accomplish in life?
 <br>
 I want to be able to reach financial freedom and create something which I can call my own whether that be a business venture, or a company of my own.
 <br>
-
+</p>
+	
 </body>
 </html>
