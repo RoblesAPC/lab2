@@ -66,6 +66,40 @@ p {
 	justify-content: center;
 }
 
+.overlaytoleft {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: lightgrey;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.overlayeffect {
+	position: relative;
+	width: 50%;
+}
+
+.overlayeffect:hover .overlaytoleft {
+	width:100%;
+	left: 0;
+}
+
+.overlaytext {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 </style>
 </head>
 
@@ -75,8 +109,11 @@ p {
 
 <h1>Welcome to my profile page</h1>
 
-<div class="center">
-<img src="./images/profile_picture.png" alt="profile pic" width="200" border-style="solid">
+<div class="overlayeffect">
+	<div class="center">
+		<img src="./images/profile_picture.png" alt="profile pic" width="200" border-style="solid">
+		<div class="overlaytext">Aljohnny</div>
+	</div>
 </div>
 
 <h2>by Aljohn Robles</h2>
