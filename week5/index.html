@@ -66,35 +66,36 @@ p {
 	justify-content: center;
 }
 
+.overlayeffect {
+  position: relative;
+  width: 50%;
+}
+
 .profilepicture {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 200;
   height: auto;
 }
 
-.overlaytoleft {
-	position: absolute;
-	bottom: 0;
-	left: 100%;
-	right: 0;
-	background-color: lightgrey;
-	overflow: hidden;
-	width: 0;
-	height: 100%;
-	transition: .5s ease;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
 }
 
-.overlayeffect {
-	position: relative
-	width: 50%;
+.overlayeffect:hover .overlay {
+  width: 100%;
+  right: 0;
 }
 
-.overlayeffect:hover .overlaytoleft {
-	width:100%;
-	left: 0;
-}
-
-.overlaytext {
+.text {
   white-space: nowrap; 
   color: white;
   font-size: 20px;
@@ -116,11 +117,12 @@ p {
 <h1>Welcome to my profile page</h1>
 
 <div class="overlayeffect">
-	<img src="./images/profile_picture.png" alt="profile pic" border-style="solid" class="profilepicture">
-	<div class="overlaytoleft">
-	<div class="overlaytext">Aljohnny</div>
+	<img src="./images/profile_picture.png" alt="profile pic" class="image">
+	<div class="overlay">
+	<div class="text">Aljohn Robles</div>
 	</div>
 </div>
+
 
 <h2>by Aljohn Robles</h2>
 
