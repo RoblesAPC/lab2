@@ -92,6 +92,9 @@ p {
 	width: 50%;
 }
 
+.profilepic {
+	display: inline-flex;
+}
 .center {
 	display: flex;
 	justify-content: center;
@@ -156,18 +159,17 @@ p {
 
 <div class="container p-5 w-5 mh-100 bg-dark bg-opacity-75 bg-height-100 text-white" style="height: 100%">
 
-<h1>Welcome to my Profile Page</h1>
+<h1>My Profile Page</h1>
 
-<div class="center">
-<div class="overlayeffect">
-	<img src="./images/profile_picture.png" alt="profile pic" width="200" class="profilepicture">
-	<div class="overlay">
-	<div class="text">Hello!</div>
+<div class="profilepic">
+	<div class="overlayeffect">
+		<img src="./images/profile_picture.png" alt="profile pic" width="200" class="profilepicture">
+			<div class="overlay">
+				<div class="text">Hello!</div>
+			</div>
 	</div>
+	<h2>Aljohn Leonel A. Robles</h2>
 </div>
-</div>
-
-<h2>Aljohn Robles</h2>
 
 <div class="center">
 	<button type="button" onclick="showNickname()">Nickname</button>
