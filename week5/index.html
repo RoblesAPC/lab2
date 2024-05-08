@@ -150,7 +150,7 @@ p {
 
 	<div style="text-align:bottom | left; padding-left: 10px;">
 		<h2 id="showfullname"></h2>
-		<h5>Fullstack Developer Student</h5>
+		<h5 id="showcourse"></h5>
 		<button type="button" onclick="showNickname()">Nickname</button>
 		<button type="button" onclick="showCourse()">Course</button>
 		<button type="button" onclick="showScholarship()">Scholarship</button>
@@ -242,8 +242,10 @@ class Name {
 }
 
 const myName = new Name("Aljohn Leonel ", "A. ", "Robles");
+const myCourse = new Name("Fullstack Development Student");
 
 document.getElementById("showfullname").innerHTML = myName.firstName + myName.middleName + myName.lastName;
+document.getElementById("showcourse").innerHTML = myCourse.firstName;
 </script>
 
 </body>
