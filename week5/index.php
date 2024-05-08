@@ -9,16 +9,19 @@
 
 <script>
 	function showNickname(){
-  document.getElementById("info").innerHTML = "Alj";
+		document.getElementById("info").innerHTML = "Alj";
 }
 	function showCourse(){
-  document.getElementById("info").innerHTML = "Associate in Computer Technology - Specializing in Full Stack Development";
+		document.getElementById("info").innerHTML = "Associate in Computer Technology - Specializing in Full Stack Development";
 }
 	function showScholarship(){
-  document.getElementById("info").innerHTML = "No";
+		document.getElementById("info").innerHTML = "No";
 }
 	function showHobbies(){
-  document.getElementById("info").innerHTML = "Video Games, Football, Hiking, Climbing, Golf, Reading, Scuba Diving, Traveling, Anime, Playing the guitar, Going to the gym, My dog, Programming";
+		document.getElementById("info").innerHTML = "Video Games, Football, Hiking, Climbing, Golf, Reading, Scuba Diving, Traveling, Anime, Playing the guitar, Going to the gym, My dog, Programming";
+}
+	function showTransferee(){
+		document.getElementById("info").innerHTML = "Transferred from De LaSalle College of Saint Benilde taking Industrial Design";
 }
 </script>
 	
@@ -169,6 +172,7 @@ p {
 		<button type="button" onclick="showCourse()">Course</button>
 		<button type="button" onclick="showScholarship()">Scholarship</button>
 		<button type="button" onclick="showHobbies()">Hobbies</button>
+		<button type="button" onclick="showTransferee()">Transferee</button>
 		<p id="info">Info will be displayed here</p>
 	</div>
 </div>
