@@ -228,16 +228,17 @@ echo "My first PHP script!";
 		document.getElementById("info").innerHTML = "Transferred from De LaSalle College of Saint Benilde taking Industrial Design";
 }
 
-const person = {
-	firstName: "Aljohn Leonel ",
-	middleInitial: "A. ",
-	lastName: "Robles",
-	fullname: function() {
-		return this.firstName + this.middleInitial + this.lastName;
+class Name {
+	constructor(firstName, middleName, lastName) {
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
 	}
 }
 
-document.getElementById("showfullname").innerHTML = person.fullname();
+const myName = new Name("Aljohn Leonel ", "A. ", "Robles");
+
+document.getElementById("showfullname").innerHTML = myName.firstName + myName.middleName + myName.lastName;
 </script>
 
 </body>
