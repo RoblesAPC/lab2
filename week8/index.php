@@ -138,6 +138,23 @@ p {
 	background-color: #111;
 }
 
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.grow:hover {
+  height: 145px;
+}
 </style>
 </head>
 
@@ -176,7 +193,7 @@ p {
 <br>
 
 <div class="row">
-	<div class="col p-3 bg-dark text-white" style="float:center; border-right:1px solid #bbb">Did you choose this course? Why?</div>
+	<div class="col p-3 bg-dark text-white grow" style="float:center; border-right:1px solid #bbb">Did you choose this course? Why?</div>
 	<div class="col p-3 bg-dark text-white">I.T. Experience/Gaming/Others</div>
 </div>
 
