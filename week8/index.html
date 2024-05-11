@@ -132,6 +132,12 @@ p {
   overflow: hidden;
   transition: all 1s ease;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 </style>
 </head>
 
@@ -145,6 +151,8 @@ p {
 </ul>
 
 <div class="background">
+<div id="scene" class="scene">
+<div data-depth="0.2" class="layer layer-1">
 <div class="container p-5 w-5 mh-100 bg-dark bg-opacity-75 bg-height-100 text-white" style="height: 100%">
 
 <h1>My Profile Page</h1>
@@ -265,6 +273,8 @@ echo "My first PHP script!";
 
 ?>
 
+</div>
+</div>
 </div>
 </div>
 
