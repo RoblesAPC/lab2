@@ -64,14 +64,17 @@ p {
 #info {
 	background: white;
 	color: black;
-	display: flex;
-	margin: auto;
-	width: 100%;
+	position: relative;
+	text-align: left;
+	overflow: auto;
+	width: 400px;
+	height: 50px;
 }
 
 .profilepic {
 	display: inline-flex;
 }
+
 .center {
 	display: flex;
 	justify-content: center;
@@ -160,6 +163,7 @@ p {
 		<button type="button" onclick="showCourse()">Course</button>
 		<button type="button" onclick="showScholarship()">Scholarship</button>
 		<button type="button" onclick="showHobbies()">Hobbies</button>
+		<br>
 		<p id="info">Info will be displayed here</p>
 	</div>
 </div>
