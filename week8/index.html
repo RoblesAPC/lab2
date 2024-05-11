@@ -8,10 +8,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	
 <style>
-body {
+.background {
 	background-image: url("./images/bg_1.png");
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center top left;
 	background-attachment: fixed;
 }
 
@@ -144,6 +144,7 @@ p {
 	<li style="float:right; border-left:1px solid #bbb;"><a href="#contact">Contact</a></li>
 </ul>
 
+<div class="background">
 <div class="container p-5 w-5 mh-100 bg-dark bg-opacity-75 bg-height-100 text-white" style="height: 100%">
 
 <h1>My Profile Page</h1>
@@ -265,6 +266,7 @@ echo "My first PHP script!";
 ?>
 
 </div>
+</div>
 
 <script>
 	function showNickname(){
@@ -295,7 +297,15 @@ function autoOver() {
 function autoOut() {
   this.style.height = "50px";
 }
+
+var scene = document.getElementById('scene');
+
+var parallaxInstance = new Parallax(scene);
+
+parallaxInstance.friction(0.2, 0.2);
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 </body>
 </html>
