@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyTableWEBPROG (firstname, lastname, email)
+$sql = "INSERT INTO myguests (firstname, lastname, email)
 VALUES ('John', 'Doe', 'john@example.com')";
 
 if ($conn->query($sql) === TRUE) {
